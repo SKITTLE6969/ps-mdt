@@ -3368,13 +3368,6 @@ $(document).ready(() => {
     if (cid) {
       args = [
         {
-          className: "toggle-duty",
-          icon: "fas fa-thumbtack",
-          text: "Toggle Duty",
-          info: cid,
-          status: "",
-        },
-        {
           className: "set-callsign",
           icon: "far fa-id-badge",
           text: "Set Callsign",
@@ -3828,7 +3821,7 @@ $(document).ready(() => {
       color9: "#6E707C",
       color10: "#8F741B",
       image: "img/LSPD.webp",
-      name: "LOS SANTOS POLICE",
+      name: "CEYLON POLICE DEPARTMENT",
     },
     bcso: {
       color1: "#333333",
