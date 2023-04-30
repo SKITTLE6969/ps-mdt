@@ -1655,7 +1655,7 @@ $(document).ready(() => {
 
   $(".contextmenu").on("click", ".bolo-delete", function () {
     if ($(this).data("info") != 0) {
-      if ($(".badge-logo").attr("src") == "img/ems_badge.webp") {
+      if ($(".badge-logo").attr("src") == "img/ems_badge.png") {
         $(".bolos-items")
           .find("[data-id='" + $(this).data("info") + "']")
           .remove();
@@ -1689,7 +1689,7 @@ $(document).ready(() => {
         status: "",
       },
     ];
-    if ($(".badge-logo").attr("src") == "img/ems_badge.webp") {
+    if ($(".badge-logo").attr("src") == "img/ems_badge.png") {
       args = [
         {
           className: "bolo-delete",
@@ -2410,7 +2410,7 @@ $(document).ready(() => {
     ".manage-reports-new",
     function () {
       let template = "";
-      if ($(".badge-logo").attr("src") == "img/ems_badge.webp") {
+      if ($(".badge-logo").attr("src") == "img/ems_badge.png") {
         template = `
     <div style="color: white;">
         <p><strong>Submitted to ICU?: [Yes/No]</strong></p>
@@ -3918,7 +3918,7 @@ $(document).ready(() => {
       color8: "#CC2525",
       color9: "#8A8D91",
       color10: "#444444",
-      image: "img/ems_badge.webp",
+      image: "img/ems_badge.png",
       name: "PILLBOX HILL MEDICAL CENTER",
     },
     doj: {
@@ -4918,7 +4918,7 @@ window.addEventListener("message", function (event) {
         "You are currently editing BOLO " + table["id"]
       );
 
-      if ($(".badge-logo").attr("src") == "img/ems_badge.webp") {
+      if ($(".badge-logo").attr("src") == "img/ems_badge.png") {
         $(".manage-bolos-editing-title").html(
           "You are editing ICU Check-in " + table["id"]
         );
@@ -4974,7 +4974,7 @@ window.addEventListener("message", function (event) {
       var reportName = "General BOLO";
       canSearchForProfiles = true;
       $(".bolos-items").empty();
-      if ($(".badge-logo").attr("src") == "img/ems_badge.webp") {
+      if ($(".badge-logo").attr("src") == "img/ems_badge.png") {
         reportName = "ICU Check-in";
       }
       $.each(table, function (index, value) {
