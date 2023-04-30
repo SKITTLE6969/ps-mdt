@@ -8,11 +8,11 @@ Config.UseCQCMugshot = true
 Config.MugPhotos = 1
 
 -- Images for mug shots will be uploaded here. Add a Discord webhook. 
-Config.Webhook = ''
+Config.Webhook = 'https://discord.com/api/webhooks/1101402075352535040/MrUFR2kyxPHBaThB_4-vHQ3hSc0W1gyusHFUl7bTORw3UgsF4RI9xjPvDqWnQEn6IqBe'
 
 -- Clock-in notifications for duty. Add a Discord webhook.
 -- Command /mdtleaderboard, will display top players per clock-in hours.
-Config.ClockinWebhook = ''
+Config.ClockinWebhook = 'https://discord.com/api/webhooks/1102133236160794694/pyLGokJuaGiZE_zPMMKWOxqg5U5q6WHEv_DWBnFZFZobBz3-RQE2fUyZ0t0MtofYWrsR'
 
 -- If set to true = Fine gets automatically removed from bank automatically charging the player.
 -- If set to false = The fine gets sent as an Invoice to their phone and it us to the player to pay for it, can remain unpaid and ignored.
@@ -84,7 +84,7 @@ Config.ImpoundLocations = {
 
 -- Support for Wraith ARS 2X. 
 
-Config.UseWolfknightRadar = true
+Config.UseWolfknightRadar = false
 Config.WolfknightNotifyTime = 5000 -- How long the notification displays for in milliseconds (30000 = 30 seconds)
 
 -- IMPORTANT: To avoid making excessive database queries, modify this config to true 'CONFIG.use_sonorancad = true' setting in the configuration file located at 'wk_wars2x/config.lua'. 

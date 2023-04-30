@@ -1331,7 +1331,7 @@ $(document).ready(() => {
     ".manage-bolos-new",
     function () {
       var template = "";
-      if ($(".badge-logo").attr("src") == "img/ems_badge.webp") {
+      if ($(".badge-logo").attr("src") == "img/ems_badge.png") {
         template = `
         <div style="color: white;">
             <p><strong>📝 ICU Room #: [ # ]</strong></p>
@@ -3303,39 +3303,39 @@ $(document).ready(() => {
     //}
   });
 
-  $(".contextmenu").on("click", ".toggle-duty", function () {
-    let info = $(this).data("info");
-    let currentStatus = $(`[data-id="${info}"]`)
-      .find(".unit-status")
-      .html();
-    if (currentStatus == "10-8") {
-      $(`[data-id="${info}"]`).find(".unit-status").html("10-7");
-      $(`[data-id="${info}"]`)
-        .find(".unit-status")
-        .removeClass("green-status")
-        .addClass("yellow-status");
-      $.post(
-        `https://${GetParentResourceName()}/toggleDuty`,
-        JSON.stringify({
-          cid: info,
-          status: 0,
-        })
-      );
-    } else if (currentStatus == "10-7") {
-      $(`[data-id="${info}"]`).find(".unit-status").html("10-8");
-      $(`[data-id="${info}"]`)
-        .find(".unit-status")
-        .removeClass("yellow-status")
-        .addClass("green-status");
-      $.post(
-        `https://${GetParentResourceName()}/toggleDuty`,
-        JSON.stringify({
-          cid: info,
-          status: 1,
-        })
-      );
-    }
-  });
+  // $(".contextmenu").on("click", ".toggle-duty", function () {
+  //   let info = $(this).data("info");
+  //   let currentStatus = $(`[data-id="${info}"]`)
+  //     .find(".unit-status")
+  //     .html();
+  //   if (currentStatus == "10-8") {
+  //     $(`[data-id="${info}"]`).find(".unit-status").html("10-7");
+  //     $(`[data-id="${info}"]`)
+  //       .find(".unit-status")
+  //       .removeClass("green-status")
+  //       .addClass("yellow-status");
+  //     $.post(
+  //       `https://${GetParentResourceName()}/toggleDuty`,
+  //       JSON.stringify({
+  //         cid: info,
+  //         status: 0,
+  //       })
+  //     );
+  //   } else if (currentStatus == "10-7") {
+  //     $(`[data-id="${info}"]`).find(".unit-status").html("10-8");
+  //     $(`[data-id="${info}"]`)
+  //       .find(".unit-status")
+  //       .removeClass("yellow-status")
+  //       .addClass("green-status");
+  //     $.post(
+  //       `https://${GetParentResourceName()}/toggleDuty`,
+  //       JSON.stringify({
+  //         cid: info,
+  //         status: 1,
+  //       })
+  //     );
+  //   }
+  // });
 
   $(".contextmenu").on("click", ".set-callsign", function () {
     let info = $(this).data("info");
@@ -3803,7 +3803,7 @@ $(document).ready(() => {
         JSON.stringify({
           callid: callId,
           cid: draggedElement,
-        })
+        }) 
       );
       draggedElement = 0;
     }
@@ -3820,7 +3820,7 @@ $(document).ready(() => {
       color8: "#2554cc",
       color9: "#6E707C",
       color10: "#8F741B",
-      image: "img/LSPD.webp",
+      image: "img/sasp_badge.png",
       name: "CEYLON POLICE DEPARTMENT",
     },
     bcso: {
